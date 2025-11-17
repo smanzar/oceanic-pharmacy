@@ -135,7 +135,7 @@ All colors MUST be HSL.
   left: 0;
   width: 100%;
   height: 76px;
-  background: url('sec-top.png') no-repeat center top;
+  background: url('/sec-top.png') no-repeat center top;
 }
 .textured-bg:after {
   content: "";
@@ -144,7 +144,7 @@ All colors MUST be HSL.
   left: 0;
   width: 100%;
   height: 76px;
-  background: url('sec-bottom.png') no-repeat center top;
+  background: url('/sec-bottom.png') no-repeat center top;
 }
 
 .feature-card .image {
