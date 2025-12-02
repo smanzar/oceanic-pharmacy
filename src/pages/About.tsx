@@ -154,9 +154,7 @@ const About = () => {
             <div className="content-section">
               <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-6">Our Commitment to Quality</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Quality is not just a buzzword at PharmaCare—it's the foundation of everything we
-                do. Every product undergoes rigorous testing and quality assurance processes before
-                reaching our customers.
+                At Oceanic Pharma, we believe that true wellness begins with strong foundations — from healthy bones to a nourished body. As a trusted name in health and nutritional care, we specialize in developing and distributing premium-quality multivitamins and bone support supplements designed to enhance everyday well-being.
               </p>
               <p className="text-lg text-muted-foreground">
                 Our state-of-the-art facilities are certified by leading regulatory bodies, and we

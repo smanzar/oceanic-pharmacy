@@ -9,6 +9,9 @@ import heroImage from "@/assets/hero-pharma.jpg";
 import qualityImage from "@/assets/quality-tested.jpg";
 import naturalImage from "@/assets/safe-natural.jpg";
 import scientificImage from "@/assets/scientifically-formulated.jpg";
+import data from "@/data";
+import ProductCard from "@/components/ProductCard";
+import Faq from "@/components/faq";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -105,13 +108,6 @@ const Home = () => {
     }
   }, []);
 
-  const products = [
-    { name: "Immune Boost", category: "Supplements", price: "$29.99" },
-    { name: "Vitamin D3", category: "Vitamins", price: "$19.99" },
-    { name: "Omega-3", category: "Supplements", price: "$34.99" },
-    { name: "Multivitamin", category: "Vitamins", price: "$24.99" },
-  ];
-
   const features = [
     {
       icon: Shield,
@@ -150,7 +146,7 @@ const Home = () => {
       date: "Jan 5, 2025",
     },
   ];
-
+  console.log(data);
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -207,30 +203,10 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] text-center mb-12 text-foreground">
             Our Products
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => (
-              <div className="product-card hover-btn" key={index}>
-                <div className="product-card-img">
-                  <span className="text-4xl">💊</span>
-                  <div className="overlay"></div>
-                </div>
-                <div className="product-card-content">
-                  <h6 className="text-xl font-semibold">{product.name}</h6>
-                  <p className="text-sm">{product.category}</p>
-                  <p className="price mt-3">{product.price} <del>$200.00</del></p>
-                </div>
-                <span className="for-border"></span>
-              </div>
-              // <Card key={index} className="product-card">
-              //   <CardContent className="p-6">
-              //     <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg mb-4 flex items-center justify-center">
-              //       <span className="text-4xl">💊</span>
-              //     </div>
-              //     <h3 className="font-bold text-xl mb-2">{product.name}</h3>
-              //     <p className="text-sm text-muted-foreground mb-2">{product.category}</p>
-              //     <p className="text-lg font-bold text-primary">{product.price}</p>
-              //   </CardContent>
-              // </Card>
+          <div className="grid place-content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* {data.products} */}
+            {data.products.map((product) => (
+              <ProductCard product={product} key={product.id} />
             ))}
           </div>
           <div className="text-center mt-10">
@@ -384,6 +360,10 @@ const Home = () => {
             </Button>
           </Link>
         </div>
+      </section>
+
+      <section className="py-10">
+        <Faq />
       </section>
     </div>
   );

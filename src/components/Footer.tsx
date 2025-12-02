@@ -53,7 +53,7 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4 text-white">Contact</h3>
             <ul className="space-y-2 text-sm text-white">
               <li>
-                <span className="font-medium">Email:</span> info@pharmacare.com
+                <span className="font-medium">Email:</span> oceanicpharma843@gmail.com
               </li>
               <li>
                 <span className="font-medium">Phone:</span> +1 (555) 123-4567

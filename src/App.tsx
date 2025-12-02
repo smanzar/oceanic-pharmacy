@@ -6,11 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Products from "./pages/Products";
 import About from "./pages/About";
 import HealthTips from "./pages/HealthTips";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Products from "./pages/Products";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/products/:productId" element={<ProductDetailPage />} />
               <Route path="/about" element={<About />} />
               <Route path="/health-tips" element={<HealthTips />} />
               <Route path="/contact" element={<Contact />} />
