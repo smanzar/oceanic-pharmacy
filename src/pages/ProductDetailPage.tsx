@@ -166,7 +166,18 @@ const ProductDetailPage  = () => {
             {/* Product Description */}
             <div className="detail-item space-y-6">
               <div>
-                <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-4">{productFromState?.name}</h2>
+                <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-3">{productFromState?.name}</h2>
+                {
+                  productFromState.category.length > 0 && (
+                    <div className="flex items-center justify-start gap-2 mb-4">
+                      {
+                        productFromState.category.map((cat) => (
+                          <p className="px-2 py-1 rounded border border-[#efefef] bg-[#eee] text-sm">{cat}</p>
+                        ))
+                      }
+                    </div>
+                  )
+                }
                 <div className="flex items-center gap-4 mb-4">
                   <span className="text-3xl font-bold text-primary">${productFromState?.price}</span>
                   <span className="text-muted-foreground line-through">$39.99</span>
@@ -200,6 +211,14 @@ const ProductDetailPage  = () => {
                   </li>
                 </ul>
               </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold">Indication</h3>
+                <p>{productFromState?.indication}</p>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold">Dosage</h3>
+                <p>{productFromState?.dosage}</p>
+              </div>
 
               {/* <div className="flex gap-4">
                 <Button size="lg" className="flex-1">
@@ -215,7 +234,7 @@ const ProductDetailPage  = () => {
       </section>
 
       {/* How to Use Section */}
-      <section ref={howToUseRef} className="py-20 textured-bg">
+      <section ref={howToUseRef} className="py-20 textured-bg hidden">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] text-center mb-16">How to Use This Product</h2>
           <div className="space-y-20">

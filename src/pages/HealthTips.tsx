@@ -38,262 +38,186 @@ const HealthTips = () => {
 
   const blogs = [
     {
-      title: "5 Ways to Boost Your Immune System Naturally",
+      title: "Health & Wellness: Empowering You to Live Your Best Life",
       author: "Dr. Sarah Johnson",
       date: "January 15, 2025",
       category: "Wellness",
       image: healthTipsHero,
       content: `
-        A strong immune system is your body's best defense against illness. Here are five evidence-based ways to naturally boost your immune function:
+        In today’s fast-paced world, health and wellness have become fundamental to leading a fulfilling and productive life. At Oceanic Pharma, we recognize that true wellness is a holistic balance of physical, mental, and emotional well-being. Our scientifically formulated supplements are designed to support you on this journey, providing essential nutrition that helps you maintain vitality and strength every day.
+        
+        <strong>Understanding Health & Wellness</strong>
+        
+        Health and wellness go beyond merely avoiding illness. They encompass nurturing your body, mind, and spirit through balanced nutrition, regular physical activity, and mindful lifestyle choices. Proper nutrition plays a critical role in this balance, and our range of supplements is created to fill nutritional gaps, ensuring your body receives the key vitamins and minerals it needs to thrive.
 
-        1. **Prioritize Quality Sleep**: Getting 7-9 hours of quality sleep each night allows your body to repair and regenerate. During sleep, your immune system releases cytokines, proteins that help fight infection and inflammation.
+        <strong>Oceanic Pharma Supplements:</strong> Your Trusted Wellness Partner
 
-        2. **Eat a Rainbow of Fruits and Vegetables**: Different colored fruits and vegetables contain various antioxidants and vitamins. Aim for at least 5 servings daily, focusing on vitamin C-rich foods like citrus fruits, berries, and leafy greens.
+        <strong>Multivitamins:</strong> A carefully balanced blend of essential vitamins and minerals to support immune function, energy production, and overall health.
 
-        3. **Stay Physically Active**: Regular moderate exercise, such as 30 minutes of brisk walking daily, can boost your immune system by promoting good circulation, which allows immune cells to move through your body more effectively.
+        <strong>Calcium & Vitamin D3:</strong> Designed to promote strong bones and healthy muscle function, helping prevent bone-related issues and support daily mobility.
 
-        4. **Manage Stress Levels**: Chronic stress weakens immune function. Practice stress-reduction techniques like meditation, yoga, or deep breathing exercises for at least 10 minutes daily.
+        <strong>Cholecalciferol (Vitamin D3):</strong> Vital for immune health, nervous system function, and maintaining mood balance.
 
-        5. **Stay Hydrated**: Water helps your body produce lymph, which carries white blood cells and other immune system cells. Aim for 8-10 glasses of water daily, more if you're active or in hot weather.
+        <strong>The Role of Nutrition in a Wellness Routine</strong>
 
-        Remember, building a strong immune system is a lifestyle choice that requires consistency. These habits work together to create a foundation for optimal health.
+        Exercise and lifestyle habits are important pillars of wellness, but without adequate nutrition, they cannot reach their full potential. Our supplements are especially beneficial for individuals with busy lifestyles who may struggle to meet their nutritional needs through diet alone. By incorporating Oceanic Pharma’s products into your daily routine, you can enhance your energy levels, improve focus, and maintain overall well-being.
+
+        <strong>Simple Tips to Enhance Your Health & Wellness</strong>
+
+        1. Stay hydrated by drinking plenty of water daily.
+
+
+        2. Follow a balanced diet rich in fruits, vegetables, lean proteins, and healthy fats.
+
+
+        3. Engage in at least 30 minutes of physical activity each day, such as walking or yoga.
+
+
+        4. Manage stress through meditation, deep breathing, or other relaxation techniques.
+
+
+        5. Support your nutrition with trusted supplements from Oceanic Pharma.
+
+        <strong>Conclusion</strong>
+
+        Wellness is a continuous journey shaped by everyday choices. Oceanic Pharma is committed to being your reliable partner in this journey by offering high-quality, science-backed supplements tailored to support your health goals. Prioritize your well-being, choose the right nutrition, and embrace a healthier, more energized lifestyle.
       `,
     },
     {
-      title: "The Importance of Vitamin D for Overall Health",
+      title: "Understanding Calcium: The Cornerstone of Strong Bones and Overall Health",
       author: "Dr. Michael Chen",
       date: "January 10, 2025",
       category: "Nutrition",
       image: healthTipsHero,
       content: `
-        Vitamin D, often called the "sunshine vitamin," plays a crucial role in numerous bodily functions. Despite its importance, vitamin D deficiency is surprisingly common, affecting nearly 1 billion people worldwide.
+        Calcium is one of the most important minerals your body needs to function optimally. From building strong bones and teeth to supporting muscle contractions and nerve function, calcium plays a crucial role in maintaining overall health and wellness. At Oceanic Pharma, we are dedicated to providing high-quality supplements, including calcium combined with vitamin D3, to help you meet your daily nutritional needs and support lifelong health.
 
-        **Why Vitamin D Matters:**
+        <strong>What Is Calcium and Why Is It Essential?</strong>
 
-        1. **Bone Health**: Vitamin D is essential for calcium absorption. Without adequate vitamin D, your body can't effectively absorb calcium, leading to weakened bones and increased risk of osteoporosis.
+        Calcium is the most abundant mineral in the human body, with approximately 99% stored in bones and teeth, providing structural support and strength. However, calcium’s role extends far beyond the skeletal system:
 
-        2. **Immune Function**: Vitamin D helps regulate immune responses, making it crucial for fighting infections. Research shows that adequate vitamin D levels may reduce the risk of respiratory infections.
+        <strong>Muscle Function:</strong> Calcium is necessary for muscle contractions, including the heart.
 
-        3. **Mental Health**: Studies have linked vitamin D deficiency to depression and seasonal affective disorder (SAD). Maintaining healthy levels may support mood regulation.
+        <strong>Nerve Transmission:</strong> It facilitates communication between nerve cells.
 
-        4. **Heart Health**: Vitamin D helps regulate blood pressure and may reduce the risk of cardiovascular disease.
+        <strong>Blood Clotting:</strong> Calcium helps blood to clot properly after injury.
 
-        **How to Get Enough Vitamin D:**
+        <strong>Hormone Secretion</strong>: It supports the release of hormones and enzymes important for bodily functions.
 
-        - **Sunlight**: Spend 10-30 minutes in midday sun several times per week (without sunscreen, which blocks vitamin D production).
-        - **Diet**: Include fatty fish (salmon, mackerel), egg yolks, and fortified foods.
-        - **Supplements**: If you can't get enough from sun and food, consider a vitamin D3 supplement (consult your healthcare provider for dosage).
+        Because calcium is so vital, your body maintains tight control over its blood levels. If dietary calcium is insufficient, the body will draw calcium from bones to maintain necessary functions, potentially weakening bones over time.
 
-        The recommended daily intake is 600-800 IU for most adults, but some people may need more. Ask your doctor about testing your vitamin D levels.
-      `,
-    },
-    {
-      title: "Understanding Omega-3 Fatty Acids and Their Benefits",
-      author: "Dr. Emily Rodriguez",
-      date: "January 5, 2025",
-      category: "Nutrition",
-      image: healthTipsHero,
-      content: `
-        Omega-3 fatty acids are essential fats that your body can't produce on its own, making dietary intake crucial. These powerful nutrients offer numerous health benefits backed by extensive scientific research.
+        <strong>How Much Calcium Do You Need?</strong>
 
-        **Types of Omega-3s:**
+        Calcium requirements vary depending on age, gender, and life stage. The following are recommended daily intakes according to health authorities:
 
-        1. **EPA (Eicosapentaenoic Acid)**: Found primarily in fish, EPA is particularly beneficial for heart health and reducing inflammation.
+        <strong>Age / Group	Recommended Daily Intake</strong>
 
-        2. **DHA (Docosahexaenoic Acid)**: Critical for brain health, DHA makes up a significant portion of the brain's structure.
+        Children 1-3 years	700 mg
+        Children 4-8 years	1,000 mg
+        Teens 9-18 years	1,300 mg
+        Adults 19-50 years	1,000 mg
+        Women 51+ and Men 71+	1,200 mg
+        Pregnant and Lactating Women	1,000-1,300 mg
 
-        3. **ALA (Alpha-Linolenic Acid)**: Found in plant sources, ALA can be converted to EPA and DHA, though inefficiently.
 
-        **Health Benefits:**
+        Ensuring adequate intake is especially important during periods of rapid growth, pregnancy, lactation, and older age, when bone loss tends to increase.
 
-        - **Heart Health**: Omega-3s reduce triglycerides, lower blood pressure, and decrease the risk of heart disease.
-        - **Brain Function**: DHA supports cognitive function, memory, and may reduce the risk of Alzheimer's disease.
-        - **Joint Health**: Anti-inflammatory properties help reduce joint pain and stiffness.
-        - **Mental Health**: May help alleviate symptoms of depression and anxiety.
-        - **Eye Health**: DHA is a structural component of the retina, supporting visual development and function.
+        <strong>The Role of Vitamin D3 in Calcium Absorption</strong>
 
-        **Best Food Sources:**
+        Vitamin D3, often called the "sunshine vitamin," plays an indispensable role in helping your body absorb calcium from food and supplements. Without sufficient vitamin D3, even a calcium-rich diet might not meet your body's needs, because calcium absorption in the gut is limited.
 
-        - Fatty fish (salmon, mackerel, sardines, herring): 2-3 servings per week
-        - Walnuts and flaxseeds (ALA source)
-        - Chia seeds
-        - Fish oil supplements (consult your healthcare provider)
+        Oceanic Pharma’s Calcium & Vitamin D3 supplement combines these two nutrients in scientifically balanced proportions to ensure your bones and muscles get the support they need for strength and function.
 
-        **Recommended Intake:**
+        <strong>Dietary Sources of Calcium</strong>
 
-        The American Heart Association recommends at least two servings of fatty fish per week. For those who don't eat fish, algae-based omega-3 supplements provide a vegetarian option.
+        The best way to get calcium is through a balanced diet rich in calcium-containing foods, including:
 
-        Consider talking to your healthcare provider about whether omega-3 supplementation is right for you, especially if you have heart disease risk factors.
-      `,
-    },
-    {
-      title: "Stress Management Techniques for Better Health",
-      author: "Dr. Sarah Johnson",
-      date: "December 28, 2024",
-      category: "Mental Health",
-      image: healthTipsHero,
-      content: `
-        Chronic stress affects every system in your body, from your immune system to your cardiovascular health. Learning effective stress management techniques is essential for maintaining overall wellness.
+        Dairy products such as milk, cheese, and yogurt
 
-        **Understanding Stress:**
+        Leafy green vegetables like kale and broccoli
 
-        Stress triggers the release of cortisol and adrenaline, preparing your body for "fight or flight." While this response is helpful in emergencies, chronic activation can lead to:
-        - Weakened immune system
-        - Digestive problems
-        - Sleep disorders
-        - Cardiovascular issues
-        - Mental health challenges
+        Fortified foods such as cereals and plant-based milk alternatives
 
-        **Effective Stress Management Techniques:**
+        Fish with edible bones, such as sardines and salmon
 
-        1. **Mindfulness Meditation**: Practice being present in the moment. Even 10 minutes daily can significantly reduce stress levels.
+        However, busy lifestyles, dietary restrictions, or medical conditions can make it difficult to meet calcium needs through diet alone, making high-quality supplements an effective and convenient option.
 
-        2. **Progressive Muscle Relaxation**: Systematically tense and relax muscle groups to release physical tension.
+        Why Choose Oceanic Pharma’s Calcium & Vitamin D3 Supplement?
 
-        3. **Deep Breathing Exercises**: The 4-7-8 technique (breathe in for 4, hold for 7, exhale for 8) activates the parasympathetic nervous system.
+        Oceanic Pharma’s supplement is carefully formulated to:
 
-        4. **Regular Physical Activity**: Exercise reduces stress hormones and stimulates endorphin production.
+        Provide Optimal Dosage: Each tablet contains the right amount of calcium and vitamin D3 to support daily needs without excess.
 
-        5. **Social Connection**: Maintain strong relationships and don't hesitate to seek support when needed.
+        Enhance Absorption: The inclusion of vitamin D3 ensures your body absorbs calcium efficiently.
 
-        6. **Time Management**: Prioritize tasks, set realistic goals, and learn to say no.
+        Maintain Bone Density: Helps prevent bone thinning and reduces the risk of osteoporosis and fractures, especially important for postmenopausal women and older adults.
 
-        7. **Hobbies and Recreation**: Engage in activities you enjoy to provide mental breaks from stressors.
+        Support Muscle and Nerve Health: Beyond bones, calcium aids in muscle contractions and nerve signaling, contributing to overall vitality.
 
-        **Creating Your Stress Management Plan:**
+        Assure Quality and Safety: Manufactured under strict quality control standards to ensure purity, potency, and safety.
 
-        - Identify your stress triggers
-        - Choose 2-3 techniques that resonate with you
-        - Practice consistently, even when not feeling stressed
-        - Monitor your progress and adjust as needed
 
-        Remember, seeking professional help from a therapist or counselor is a sign of strength, not weakness. If stress is significantly impacting your daily life, consider reaching out to a mental health professional.
-      `,
-    },
-    {
-      title: "The Role of Probiotics in Digestive Health",
-      author: "Dr. Michael Chen",
-      date: "December 20, 2024",
-      category: "Digestive Health",
-      image: healthTipsHero,
-      content: `
-        Your gut contains trillions of microorganisms that play a crucial role in your overall health. Probiotics—beneficial bacteria—can help maintain a healthy gut microbiome and support various bodily functions.
+        <strong>Signs You Might Need More Calcium</strong>
 
-        **What Are Probiotics?**
+        While calcium deficiency is not always obvious, symptoms to watch for include:
 
-        Probiotics are live microorganisms that provide health benefits when consumed in adequate amounts. They're found naturally in fermented foods and are also available as supplements.
+        Frequent muscle cramps or spasms
 
-        **Health Benefits of Probiotics:**
+        Weak or brittle nails
 
-        1. **Digestive Health**: Probiotics help maintain the balance of good bacteria in your gut, which can:
-           - Reduce symptoms of irritable bowel syndrome (IBS)
-           - Prevent and treat diarrhea
-           - Improve symptoms of inflammatory bowel disease
+        Tooth decay or gum problems
 
-        2. **Immune Function**: About 70% of your immune system resides in your gut. Probiotics support immune health by:
-           - Enhancing the gut barrier
-           - Producing compounds that fight harmful bacteria
-           - Modulating immune responses
+        Tingling or numbness in fingers
 
-        3. **Mental Health**: The gut-brain connection means probiotics may influence mood and cognitive function, potentially helping with:
-           - Depression
-           - Anxiety
-           - Stress management
+        Increased risk of bone fractures
 
-        4. **Other Benefits**: Research suggests probiotics may also help with:
-           - Skin health
-           - Weight management
-           - Heart health
-           - Allergies
+        If you experience any of these symptoms, it is important to consult your healthcare professional and consider reviewing your calcium intake.
 
-        **Best Food Sources:**
+        Risks of Calcium Deficiency and How to Avoid Them
 
-        - Yogurt with live cultures
-        - Kefir
-        - Sauerkraut
-        - Kimchi
-        - Kombucha
-        - Miso
-        - Tempeh
+        Prolonged calcium deficiency can lead to:
 
-        **Choosing a Probiotic Supplement:**
+        <strong>Osteoporosis:</strong> A condition characterized by weak, porous bones prone to fractures.
 
-        If considering supplements, look for:
-        - Multiple strains of bacteria
-        - At least 1 billion CFUs (colony-forming units)
-        - Products that specify strains (e.g., Lactobacillus acidophilus)
-        - Third-party testing certification
+        <strong>Rickets (in children):</strong> Softening and weakening of bones due to poor mineralization.
 
-        **Important Considerations:**
+        <strong>Hypocalcemia:</strong> Low blood calcium levels causing muscle spasms, tingling, or abnormal heart rhythms.
 
-        - Probiotics are generally safe for most people
-        - Those with compromised immune systems should consult a healthcare provider
-        - Different strains serve different purposes
-        - Consistency is key—benefits may take several weeks to appear
 
-        Pair probiotics with prebiotics (fiber-rich foods that feed good bacteria) for optimal gut health. Foods like bananas, onions, garlic, and whole grains are excellent prebiotic sources.
-      `,
-    },
-    {
-      title: "Sleep Hygiene: Tips for Better Rest and Recovery",
-      author: "Dr. Emily Rodriguez",
-      date: "December 15, 2024",
-      category: "Sleep Health",
-      image: healthTipsHero,
-      content: `
-        Quality sleep is fundamental to physical health, mental well-being, and overall quality of life. Yet many people struggle with sleep issues. Good sleep hygiene—habits and practices that promote consistent, quality sleep—can make a significant difference.
+        Avoiding these conditions means proactively managing calcium intake through diet and supplementation when needed.
 
-        **Why Sleep Matters:**
+        <strong>Safe Supplementation Practices</strong>
 
-        During sleep, your body:
-        - Repairs tissues and builds muscle
-        - Consolidates memories
-        - Regulates hormones
-        - Strengthens the immune system
-        - Processes emotions
+        While supplements are beneficial, it is essential to follow recommended guidelines:
 
-        Chronic sleep deprivation increases risks of obesity, diabetes, cardiovascular disease, and mental health issues.
+        Do not exceed the daily recommended dose: Excessive calcium can cause kidney stones and other health issues.
 
-        **Essential Sleep Hygiene Practices:**
+        Take supplements with meals: This improves absorption, especially for calcium carbonate.
 
-        1. **Maintain a Consistent Schedule**: Go to bed and wake up at the same time every day, even on weekends. This regulates your body's internal clock.
+        Space doses if taking large amounts: Absorption is better when calcium is taken in smaller amounts (usually ≤500 mg) multiple times a day.
 
-        2. **Create a Relaxing Bedtime Routine**: Wind down 30-60 minutes before bed with calming activities:
-           - Reading
-           - Gentle stretching
-           - Meditation or deep breathing
-           - Taking a warm bath
+        Consult healthcare providers: Especially if you have kidney disease, certain medications, or other health concerns.
 
-        3. **Optimize Your Sleep Environment**:
-           - Keep your bedroom cool (60-67°F/15-19°C)
-           - Use blackout curtains or an eye mask
-           - Minimize noise with earplugs or white noise
-           - Invest in a comfortable mattress and pillows
+        Incorporating Calcium Into Your Wellness Routine
 
-        4. **Limit Screen Time**: Blue light from devices suppresses melatonin production. Stop using screens 1-2 hours before bed, or use blue light filters.
+        To maximize bone health and overall wellness:
 
-        5. **Watch Your Diet**:
-           - Avoid caffeine after 2 PM
-           - Don't eat large meals close to bedtime
-           - Limit alcohol (it may help you fall asleep but disrupts sleep quality)
-           - Stay hydrated but not right before bed
+        1. Eat a balanced diet rich in calcium and vitamin D3.
 
-        6. **Exercise Regularly**: Physical activity promotes better sleep, but avoid vigorous exercise within 3 hours of bedtime.
+        2. Engage in regular weight-bearing exercise such as walking or resistance training to strengthen bones.
 
-        7. **Manage Stress**: Practice relaxation techniques and address worries before bedtime through journaling or meditation.
+        3. Avoid smoking and excessive alcohol consumption, which can weaken bones.
 
-        8. **Use Your Bed Only for Sleep**: This strengthens the mental association between your bed and sleep.
+        4. Take Oceanic Pharma Calcium & Vitamin D3 supplements as directed to fill nutritional gaps.
 
-        **When to Seek Help:**
+        5. Schedule regular check-ups with your healthcare provider to monitor bone health.
 
-        Consult a healthcare provider if you:
-        - Regularly take more than 30 minutes to fall asleep
-        - Wake frequently during the night
-        - Feel tired despite adequate sleep duration
-        - Snore loudly or gasp during sleep (possible sleep apnea)
-        - Experience unusual movements or behaviors during sleep
+        <strong>Conclusion:</strong> 
+        Invest in Your Bone Health Today
 
-        Remember, improving sleep takes time. Be patient and consistent with your new habits, and you'll likely see improvements within 2-4 weeks.
+        Calcium is an essential mineral that supports many critical functions in the body, most notably the strength and structure of your bones. Given the challenges of meeting daily calcium needs through diet alone, especially for certain populations, high-quality supplementation plays a vital role.
+
+        Oceanic Pharma’s Calcium & Vitamin D3 supplement offers a scientifically formulated, trusted solution to support your health journey. Prioritize your bone and overall wellness by choosing a supplement that delivers quality, safety, and efficacy because a stronger, healthier you starts with strong foundations.
       `,
     },
   ];
@@ -350,16 +274,9 @@ const HealthTips = () => {
 
                     <div className="prose prose-lg max-w-none">
                       <div className="whitespace-pre-line text-muted-foreground">
-                        {blog.content}
+                        <div dangerouslySetInnerHTML={{ __html: blog.content }}></div>
+                        {/* {blog.content} */}
                       </div>
-                    </div>
-
-                    <div className="mt-8 pt-8 border-t border-border">
-                      <p className="text-sm text-muted-foreground italic">
-                        Disclaimer: This article is for informational purposes only and should not
-                        replace professional medical advice. Always consult with a healthcare
-                        provider before making changes to your health regimen.
-                      </p>
                     </div>
                   </CardContent>
                 </Card>

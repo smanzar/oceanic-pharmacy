@@ -123,17 +123,18 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="content-section">
-              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-6">Our Story</h2>
+              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-6">Our Mission — Advancing Wellness with Purpose</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Founded in 1998, PharmaCare began with a simple mission: to provide high-quality,
-                accessible pharmaceutical products to communities worldwide. What started as a
-                small local pharmacy has grown into a trusted global healthcare partner.
+                At Oceanic Pharma, our mission is to elevate the standards of health and wellbeing through integrity, innovation, and a deep commitment to the communities we serve. Guided by a vision of contributing to a healthier tomorrow, we strive to deliver trusted nutritional and healthcare solutions that make a meaningful difference in people’s lives.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                As a forward-thinking pharmaceutical and nutraceutical company, we combine the power of nature with the precision of modern science. Our focus is to research, develop, and provide products that support stronger bodies, balanced nutrition, and long-term wellness. Every formula we design undergoes rigorous quality standards, ensuring safety, purity, and reliability values that define who we are.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                At Oceanic Pharma, we believe wellness is not just an outcome; it is a continuous journey. That is why we are dedicated to promoting a healthier lifestyle, fostering customer trust, and contributing to the wellbeing of our community. Through ethical practices, sustainable innovation, and unwavering commitment to excellence, we aim to be a brand that people can rely on for their health, today and for years to come.
               </p>
               <p className="text-lg text-muted-foreground">
-                Over the past 25 years, we've remained committed to our founding principles while
-                embracing innovation and scientific advancement. Today, we serve millions of
-                customers across the globe, always maintaining our dedication to quality, safety,
-                and customer care.
+                With every step we take, and every product we create, we reaffirm our promise: To advance wellness with purpose and to enrich lives, the Oceanic way.
               </p>
             </div>
 
@@ -144,7 +145,7 @@ const About = () => {
                 pharmaceutical products and exceptional customer service. We believe that everyone
                 deserves access to safe, effective healthcare solutions.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground mb-4">
                 We achieve this through continuous innovation, rigorous quality control, and a
                 deep commitment to scientific research and development. Every product we offer is
                 backed by extensive testing and meets the highest industry standards.
@@ -152,14 +153,12 @@ const About = () => {
             </div>
 
             <div className="content-section">
-              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-6">Our Commitment to Quality</h2>
+              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-6">Our Vision</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                At Oceanic Pharma, we believe that true wellness begins with strong foundations — from healthy bones to a nourished body. As a trusted name in health and nutritional care, we specialize in developing and distributing premium-quality multivitamins and bone support supplements designed to enhance everyday well-being.
+                At Oceanic Pharma, our vision is to become a trusted global leader in innovative, science-backed nutritional and healthcare solutions. We aspire to set new standards of excellence by delivering products that empower individuals to live healthier, stronger, and more fulfilling lives.
               </p>
               <p className="text-lg text-muted-foreground">
-                Our state-of-the-art facilities are certified by leading regulatory bodies, and we
-                work closely with healthcare professionals to ensure our products meet the evolving
-                needs of modern medicine.
+                We envision a future where wellness is accessible to everyone supported by our commitment to quality, ethical practices, and continuous advancement. Through responsible innovation and a customer-first approach, Oceanic Pharma aims to shape a healthier world, one step at a time.
               </p>
             </div>
           </div>

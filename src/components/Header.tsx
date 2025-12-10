@@ -12,6 +12,7 @@ const Header = () => {
     { name: "Products", path: "/products" },
     { name: "About Us", path: "/about" },
     { name: "Health Tips", path: "/health-tips" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -46,11 +47,12 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/contact">
+            
+            {/* <Link to="/contact">
               <Button variant="default" size="default">
                 Contact Us
               </Button>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,11 +80,11 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
+            {/* <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
               <Button variant="default" size="default" className="w-full">
                 Contact Us
               </Button>
-            </Link>
+            </Link> */}
           </nav>
         )}
       </div>

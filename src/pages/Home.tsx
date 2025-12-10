@@ -131,14 +131,14 @@ const Home = () => {
 
   const healthTips = [
     {
-      title: "5 Ways to Boost Your Immune System",
-      excerpt: "Discover natural methods to strengthen your body's defenses...",
+      title: "Health & Wellness: Empowering You to Live Your Best Life",
+      excerpt: "In today’s fast-paced world, health and wellness have become fundamental to leading...",
       date: "Jan 15, 2025",
     },
     {
-      title: "The Importance of Vitamin D",
-      excerpt: "Learn why vitamin D is essential for overall health...",
-      date: "Jan 10, 2025",
+      title: "Understanding Calcium: The Cornerstone of Strong Bones and Overall Health",
+      excerpt: "Calcium is one of the most important minerals your body needs to function optimally..",
+      date: "Jan 10, 2024",
     },
     {
       title: "Understanding Omega-3 Benefits",
@@ -146,16 +146,15 @@ const Home = () => {
       date: "Jan 5, 2025",
     },
   ];
-  console.log(data);
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section ref={heroRef} className="relative overflow-hidden banner-section">
-        <div className="banner-wrapper min-h-screen">
+        <div className="banner-wrapper md:min-h-screen">
           <div className="banner-left">
             <img src='/banner-texture.svg' alt='banner-texture' className="banner-vector3" />
             <div className="banner-content">
-              <h1 className="font-literata">Healthy skin cannot be rushed.</h1>
+              <h1 className="font-literata">Oceanic Pharma A Trusted Name in Health & Wellness</h1>
               <p>Whatever your summer looks like, bring your own heat with up to 25% off Lumin Brand.</p>
             </div>
           </div>
@@ -191,6 +190,52 @@ const Home = () => {
                   <span className="text-5xl md:text-7xl font-bold text-foreground">02</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex gap-8 items-center">
+            <div className="w-1/2">
+              <img src='./aboutUs.jpg' alt='about' className="w-full rounded-[25px]" />
+            </div>
+            <div className="w-1/2">
+              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-7 text-foreground">
+                Our Mission — Advancing Wellness with Purpose
+              </h2>
+              <p className="leading-7 text-muted-foreground mb-6">
+                At Oceanic Pharma, our mission is to elevate the standards of health and wellbeing through integrity, innovation, and a deep commitment to the communities we serve. Guided by a vision of contributing to a healthier tomorrow, we strive to deliver trusted nutritional and healthcare solutions that make a meaningful difference in people’s lives.
+              </p>
+              <Link to="/about">
+                <Button variant="secondary" className="px-6 py-2 h-[44px]">
+                  Learn More
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex gap-8 items-center">
+            <div className="w-1/2">
+              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-7 text-foreground">
+                Our Vision
+              </h2>
+              <p className="leading-7 text-muted-foreground mb-6">
+                At Oceanic Pharma, our vision is to become a trusted global leader in innovative, science-backed nutritional and healthcare solutions. We aspire to set new standards of excellence by delivering products that empower individuals to live healthier, stronger, and more fulfilling lives.
+              </p>
+              <Link to="/about">
+                <Button variant="secondary" className="px-6 py-2 h-[44px]">
+                  Learn More
+                </Button>
+              </Link>
+            </div>
+            <div className="w-1/2">
+              <img src='./our-vision.jpg' alt='about' className="w-full rounded-[25px]" />
             </div>
           </div>
         </div>

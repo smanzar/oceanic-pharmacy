@@ -182,6 +182,7 @@ All colors MUST be HSL.
   border: 1px solid #ececec;
   padding: 15px;
   transition: .5s;
+  cursor: pointer;
 }
 .product-card .product-card-img {
   display: flex;
@@ -279,69 +280,94 @@ All colors MUST be HSL.
   transition-delay: .3s;
 }
 
-.banner-section .banner-wrapper {
-  display: flex;
+.banner-section {
+  .banner-wrapper {
+    display: flex;
+    .banner-left {
+      padding: 190px 30px 130px 10%;
+      background-color: #fcf7ee;
+      width: 45%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      .banner-content {
+        position: relative;
+        max-width: 560px;
+        width: 100%;
+        h1 {
+          font-size: 44px;
+          line-height: 1.2;
+          letter-spacing: .02em;
+          text-transform: capitalize;
+          color: #222;
+          margin-bottom: 20px;
+        }
+        p {
+          font-family: var(--font-Jost);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1.8;
+          letter-spacing: .03em;
+          text-transform: capitalize;
+          color: var(--primary-color1);
+          margin-bottom: 40px;
+        }
+      }
+      .banner-vector3 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .banner-right-wrapper {
+      width: 55%;
+      padding-left: 0;
+      position: relative;
+      .banner-right-img {
+        position: relative;
+        height: 100%;
+        .banner-right-bg {
+          min-height: 500px;
+          height: 100%;
+          position: relative;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+    @media(max-width: 767px) {
+      padding: 150px 15px 70px;
+      position: relative;
+      align-items: center;
+      .banner-left {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        padding: 20px 15px;
+        background: rgba(252, 247, 238, 0.85);
+        height: max-content;
+        .banner-content {
+          h1 {
+            font-size: 30px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+      .banner-right-wrapper {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
 }
 
-.banner-section .banner-wrapper .banner-left {
-  padding: 190px 30px 130px 10%;
-  background-color: #fcf7ee;
-  width: 45%;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.banner-section .banner-wrapper .banner-left .banner-content {
-  position: relative;
-  max-width: 560px;
-  width: 100%;
-}
-
-.banner-section .banner-wrapper .banner-left .banner-content h1 {
-  font-size: 60px;
-  line-height: 1.2;
-  letter-spacing: .02em;
-  text-transform: capitalize;
-  color: #222;
-  margin-bottom: 20px;
-}
-
-.banner-section .banner-wrapper .banner-left .banner-content p {
-  font-family: var(--font-Jost);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.8;
-  letter-spacing: .03em;
-  text-transform: capitalize;
-  color: var(--primary-color1);
-  margin-bottom: 40px;
-}
-
-.banner-section .banner-wrapper .banner-right-wrapper {
-  width: 55%;
-  padding-left: 0;
-  position: relative;
-}
-
-.banner-section .banner-wrapper .banner-right-wrapper .banner-right-img {
-  position: relative;
-  height: 100%;
-}
-
-.banner-section .banner-wrapper .banner-right-wrapper .banner-right-img .banner-right-bg {
-  min-height: 500px;
-  height: 100%;
-  position: relative;
-  object-fit: cover;
-  width: 100%;
-}
-
-.banner-section .banner-wrapper .banner-left .banner-vector3 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
 
 
 .site-footer {
