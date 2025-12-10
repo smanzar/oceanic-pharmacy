@@ -197,11 +197,11 @@ const Home = () => {
 
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="flex gap-8 items-center">
-            <div className="w-1/2">
+          <div className="flex md:flex-nowrap flex-wrap gap-8 items-center">
+            <div className="md:w-1/2 w-full">
               <img src='./aboutUs.jpg' alt='about' className="w-full rounded-[25px]" />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2 w-full">
               <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-7 text-foreground">
                 Our Mission — Advancing Wellness with Purpose
               </h2>
@@ -218,10 +218,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="md:pt-20 md:pb-20">
         <div className="container mx-auto px-4">
-          <div className="flex gap-8 items-center">
-            <div className="w-1/2">
+          <div className="flex md:flex-nowrap flex-wrap gap-8 items-center">
+            <div className="md:w-1/2 w-full">
               <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-7 text-foreground">
                 Our Vision
               </h2>
@@ -234,7 +234,7 @@ const Home = () => {
                 </Button>
               </Link>
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2 w-full">
               <img src='./our-vision.jpg' alt='about' className="w-full rounded-[25px]" />
             </div>
           </div>
