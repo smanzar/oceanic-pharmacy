@@ -42,7 +42,7 @@ const HealthTips = () => {
       author: "Dr. Sarah Johnson",
       date: "January 15, 2025",
       category: "Wellness",
-      image: healthTipsHero,
+      image: '/images/blog2.jpg',
       content: `
         In today’s fast-paced world, health and wellness have become fundamental to leading a fulfilling and productive life. At Oceanic Pharma, we recognize that true wellness is a holistic balance of physical, mental, and emotional well-being. Our scientifically formulated supplements are designed to support you on this journey, providing essential nutrition that helps you maintain vitality and strength every day.
         
@@ -88,7 +88,7 @@ const HealthTips = () => {
       author: "Dr. Michael Chen",
       date: "January 10, 2025",
       category: "Nutrition",
-      image: healthTipsHero,
+      image: '/images/blog1.jpg',
       content: `
         Calcium is one of the most important minerals your body needs to function optimally. From building strong bones and teeth to supporting muscle contractions and nerve function, calcium plays a crucial role in maintaining overall health and wellness. At Oceanic Pharma, we are dedicated to providing high-quality supplements, including calcium combined with vitamin D3, to help you meet your daily nutritional needs and support lifelong health.
 
@@ -218,6 +218,145 @@ const HealthTips = () => {
         Calcium is an essential mineral that supports many critical functions in the body, most notably the strength and structure of your bones. Given the challenges of meeting daily calcium needs through diet alone, especially for certain populations, high-quality supplementation plays a vital role.
 
         Oceanic Pharma’s Calcium & Vitamin D3 supplement offers a scientifically formulated, trusted solution to support your health journey. Prioritize your bone and overall wellness by choosing a supplement that delivers quality, safety, and efficacy because a stronger, healthier you starts with strong foundations.
+      `,
+    },
+    {
+      title: "Max Move Fish Collagen: A Powerful Supplement for Skin, Bone, and Overall Wellness",
+      author: "Dr. Michael Chen",
+      date: "January 10, 2025",
+      category: "Nutrition",
+      image: '/images/blog4.jpg',
+      content: `
+        At Oceanic Pharma, we are committed to developing science-backed wellness solutions that support your health from the inside out. One of our most valued formulations, Max Move Fish Collagen, is designed to enhance skin vitality, strengthen bones, and contribute to overall well-being. Derived from high-quality fish collagen peptides, this advanced supplement offers a range of clinically supported benefits that make it an essential part of daily nutrition.
+
+        1. Skin Health Benefits of Max Move Fish Collagen
+
+        Fish collagen has gained strong recognition in dermatology and aesthetic wellness due to its superior absorption and bioavailability. Max Move Fish Collagen from Oceanic Pharma is especially beneficial for individuals looking to maintain youthful, radiant, and hydrated skin.
+
+        Improves Skin Elasticity
+
+        Research indicates that fish collagen peptides significantly enhance skin elasticity, helping the skin appear firmer and more resilient. This can be particularly beneficial as natural collagen production begins to decline with age.
+
+        Enhances Hydration
+
+        Fish collagen helps the skin retain moisture, reducing dryness and dullness. Regular supplementation can promote a smoother, more hydrated complexion.
+
+        Reduces Wrinkles and Fine Lines
+
+        By boosting collagen levels in the dermal layers, Max Move Fish Collagen can visibly reduce the appearance of wrinkles, fine lines, and age-related sagging.
+      `,
+    },
+    {
+      title: "Four Great Supplements You Can Start Taking Today | Oceanic Pharma",
+      author: "Dr. Michael Chen",
+      date: "January 10, 2025",
+      category: "Nutrition",
+      image: '/images/blog5.jpg',
+      content: `
+        In today’s demanding lifestyle, maintaining optimal health through diet alone is often difficult. At *Oceanic Pharma, we are committed to delivering **science-backed, quality-driven nutraceutical solutions* that help support everyday wellness. Our carefully formulated supplements are designed to bridge nutritional gaps, support long-term health, and complement a balanced lifestyle.
+
+        In this comprehensive guide, we highlight *four essential supplements* you can start taking today to support skin, bone, joint, and overall health—featuring trusted Oceanic Pharma products.
+
+        <strong>1. Multivitamins & Minerals (Mulmax)</strong>
+
+        A daily multivitamin is the foundation of good health. *Mulmax by Oceanic Pharma* is a balanced formulation of essential vitamins and minerals designed to support overall vitality and nutritional balance.
+
+        <strong>Why Multivitamins Matter</strong>
+
+        Modern diets, stress, and lifestyle habits can lead to micronutrient deficiencies, affecting energy levels, immunity, and general well-being. Mulmax helps provide consistent daily nutritional support.
+
+        <strong>Key Benefits:</strong>
+
+        * Helps fulfill daily vitamin and mineral requirements
+        * Supports immune system function
+        * Aids energy metabolism and reduces fatigue
+        * Supports overall physical and mental performance
+
+        <strong>Ideal For:</strong>
+
+        * Individuals with busy lifestyles
+        * Those with dietary restrictions
+        * Adults seeking comprehensive daily nutritional support
+
+        <strong>2. Vitamin D Supplement (D-Light)</strong>
+
+        Vitamin D plays a critical role in bone health, immunity, and muscle function. *D-Light by Oceanic Pharma* provides reliable Vitamin D supplementation to help address widespread Vitamin D deficiency.
+
+        <strong>Importance of Vitamin D</strong>
+
+        Limited sun exposure, indoor lifestyles, and dietary insufficiency contribute to low Vitamin D levels, which may impact bone strength and immune health.
+
+        <strong>Key Benefits:</strong>
+
+        * Supports calcium absorption
+        * Helps maintain strong bones and teeth
+        * Supports immune system health
+        * Contributes to normal muscle function
+
+        <strong>Ideal For:</strong>
+
+        * Individuals with limited sun exposure
+        * Adults concerned about bone and immune health
+        * Elderly individuals and office-based professionals
+
+
+        <strong>3. Calcium with Vitamin & Zinc (Maxilight)</strong>
+
+        Strong bones require more than calcium alone. *Maxilight by Oceanic Pharma* combines calcium with essential vitamins and zinc to support comprehensive bone health.
+
+        <strong>Why Calcium Combinations Work Better</strong>
+
+        Calcium works synergistically with vitamins and minerals to support bone mineralization and skeletal strength.
+
+        <strong>Key Benefits:</strong>
+
+        * Supports bone density and strength
+        * Helps maintain healthy teeth
+        * Supports muscle and nerve function
+        * Useful as adjunct nutritional support in individuals with low bone mass
+
+        <strong>Ideal For:</strong>
+
+        * Women, especially post-menopausal
+        * Elderly individuals
+        * Adults with increased calcium needs
+
+        <strong>4. Fish Collagen Supplement (Max Move Fish Collagen)</strong>
+
+        Collagen is a key structural protein for skin, joints, bones, hair, and nails. *Max Move Fish Collagen by Oceanic Pharma* is formulated using high-quality fish collagen peptides for superior absorption and effectiveness.
+
+        <strong>Benefits of Fish Collagen</strong>
+
+        Fish collagen is known for its high bioavailability, making it an excellent choice for supporting connective tissue health.
+
+        <strong>Key Benefits:</strong>
+
+        * Improves skin elasticity and hydration
+        * Helps reduce the appearance of fine lines and wrinkles
+        * Supports joint flexibility and mobility
+        * Supports healthy hair and nails
+
+        <strong>Ideal For:</strong>
+
+        * Individuals experiencing age-related collagen decline
+        * People with joint stiffness due to aging or physical activity
+        * Those seeking skin and beauty-from-within support
+
+        <strong>Why Choose Oceanic Pharma? </strong>
+
+        At Oceanic Pharma, quality, safety, and scientific integrity are at the core of everything we do. Our supplements are developed using carefully selected ingredients, manufactured under strict quality standards, and designed to meet modern wellness needs.
+
+        <strong>Our Commitment:</strong>
+
+        * Science-backed formulations
+        * Quality-controlled manufacturing
+        * Consumer-focused wellness solutions
+
+        <strong>Final Thoughts</strong>
+
+        Incorporating the right supplements into your daily routine can play a valuable role in supporting long-term health and well-being. With *Oceanic Pharma’s trusted range of supplements*, you can take a proactive approach to wellness—starting today.
+
+        *Disclaimer: Nutritional supplements are not intended to diagnose, treat, cure, or prevent any disease. Always consult a healthcare professional before starting any new supplement.
       `,
     },
   ];

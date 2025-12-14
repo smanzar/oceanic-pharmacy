@@ -134,16 +134,19 @@ const Home = () => {
       title: "Health & Wellness: Empowering You to Live Your Best Life",
       excerpt: "In today’s fast-paced world, health and wellness have become fundamental to leading...",
       date: "Jan 15, 2025",
+      image: '/images/blog2.jpg',
     },
     {
       title: "Understanding Calcium: The Cornerstone of Strong Bones and Overall Health",
       excerpt: "Calcium is one of the most important minerals your body needs to function optimally..",
       date: "Jan 10, 2024",
+      image: '/images/blog1.jpg',
     },
     {
-      title: "Understanding Omega-3 Benefits",
-      excerpt: "Explore the science behind omega-3 fatty acids...",
+      title: "Four Great Supplements You Can Start Taking Today | Oceanic Pharma",
+      excerpt: "In today’s demanding lifestyle, maintaining optimal health through diet alone is often difficult....",
       date: "Jan 5, 2025",
+      image: '/images/blog5.jpg',
     },
   ];
   return (
@@ -155,7 +158,7 @@ const Home = () => {
             <img src='/banner-texture.svg' alt='banner-texture' className="banner-vector3" />
             <div className="banner-content">
               <h1 className="font-literata">Oceanic Pharma A Trusted Name in Health & Wellness</h1>
-              <p>Whatever your summer looks like, bring your own heat with up to 25% off Lumin Brand.</p>
+              <p>Oceanic Pharma – Delivering Quality, Safety, and Wellness You Can Rely On. No matter what your day looks like, stay stronger and healthier with our trusted wellness range.</p>
             </div>
           </div>
           <div className="banner-right-wrapper">
@@ -195,6 +198,25 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="pt-20">
+        <div className="container mx-auto px-4">
+          <div className="flex md:flex-nowrap flex-wrap gap-8 items-center text-center">
+            <div className="w-full">
+              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-7 text-foreground">
+                About us
+              </h2>
+              <p className="leading-7 text-muted-foreground mb-6 text-lg">
+                At Oceanic Pharma, we believe that true wellness begins with strong foundations — from healthy bones to a nourished body. As a trusted name in health and nutritional care, we specialize in developing and distributing premium-quality multivitamins and bone support supplements designed to enhance everyday well-being.
+              </p>
+              {/* <Link to="/about">
+                <Button variant="secondary" className="px-6 py-2 h-[44px]">
+                  Learn More
+                </Button>
+              </Link> */}
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="flex md:flex-nowrap flex-wrap gap-8 items-center">
@@ -312,7 +334,7 @@ const Home = () => {
               <div>
                 <h3 className="font-literata text-[#1c1a1d]">Satisfied Clients</h3>
                 <p className="text-primary mb-2 text-4xl">
-                  <span className="counter-value" data-target="10" data-suffix="M+">0M+</span>
+                  <span className="counter-value" data-target="1" data-suffix="M+">0M+</span>
                 </p>
               </div>
             </div>
@@ -324,7 +346,7 @@ const Home = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="font-literata text-[#1c1a1d]">Natural Products</h3>
+                <h3 className="font-literata text-[#1c1a1d]">GMP Certified Manufacturing</h3>
                 <p className="text-primary mb-2 text-4xl">
                   <span className="counter-value" data-target="100" data-suffix="%">0%</span>
                 </p>
@@ -338,9 +360,9 @@ const Home = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="font-literata text-[#1c1a1d]">Experience</h3>
+                <h3 className="font-literata text-[#1c1a1d]">Experience in Healthcare</h3>
                 <p className="text-primary mb-2 text-4xl">
-                  <span className="counter-value" data-target="20" data-suffix="+ Years">0+ Years</span>
+                  <span className="counter-value" data-target="10" data-suffix="+ Years">0+ Years</span>
                 </p>
               </div>
             </div>
@@ -352,7 +374,7 @@ const Home = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="font-literata text-[#1c1a1d]">Specialists in The Team</h3>
+                <h3 className="font-literata text-[#1c1a1d]">Qualified Pharma Specialists</h3>
                 <p className="text-primary mb-2 text-4xl">
                   <span className="counter-value" data-target="10" data-suffix="+">0+</span>
                 </p>
@@ -372,7 +394,9 @@ const Home = () => {
             {healthTips.map((tip, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow bg-[#f5f2ec]">
                 <CardContent className="p-0">
-                  <div className="w-full h-[340px] bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg mb-4"></div>
+                  <div className="w-full h-[340px] bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg mb-4">
+                  <img src={tip.image} alt={tip.title} className="w-full h-full object-cover rounded-lg" />
+                  </div>
                   <div className="p-6">
                     <p className="text-sm text-muted-foreground mb-2">{tip.date}</p>
                     <h3 className="font-bold text-xl mb-3">{tip.title}</h3>
