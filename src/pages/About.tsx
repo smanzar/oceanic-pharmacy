@@ -251,22 +251,13 @@ const About = () => {
       {/* Team Section */}
       <section className="py-20 textured-bg">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] text-center mb-12">Our Leadership Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              { name: "Dr. Sarah Johnson", role: "Chief Executive Officer" },
-              { name: "Dr. Michael Chen", role: "Chief Medical Officer" },
-              { name: "Emily Rodriguez", role: "Chief Operations Officer" },
-            ].map((member, index) => (
-              <Card key={index} className="hover:shadow-xl transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-4"></div>
-                  <h3 className="font-bold text-xl mb-2">{member.name}</h3>
-                  <p className="text-muted-foreground">{member.role}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] text-center mb-12">Our Dedicated Commitment</h2>
+          <p className="text-md leading-8 text-muted-foreground text-justify">
+            At Oceanic Pharma, our purpose goes beyond medicines. We exist to serve life itself by advancing healthcare through science, integrity, and an unwavering sense of responsibility. Every decision we make is guided by one simple belief: patients come first.
+            Our journey is shaped by the dedication of medical experts, scientists, and professionals who share a deep commitment to excellence. Together, we work relentlessly to develop pharmaceutical solutions that healthcare providers can trust and patients can depend on. Quality, safety, and ethics are not goals for us; they are non-negotiable standards.
+            As a leader in healthcare, we recognize the trust placed in us by physicians, partners, and communities. We honor that trust by continuously investing in innovation, adhering to global quality benchmarks, and acting with transparency at every level of our organization.
+            Looking ahead, our vision is clear-to contribute meaningfully to healthier lives, stronger healthcare systems, and a future where science and compassion work hand in hand.
+          </p>
         </div>
       </section>
     </div>

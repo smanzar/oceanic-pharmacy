@@ -392,7 +392,8 @@ const HealthTips = () => {
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="w-full h-[400px] object-cover"
+                    className="w-full h-[400px]"
+                    // object-cover
                   />
                   <CardContent className="p-8">
                     <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">

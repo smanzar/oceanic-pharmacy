@@ -284,12 +284,13 @@ All colors MUST be HSL.
   .banner-wrapper {
     display: flex;
     .banner-left {
-      padding: 190px 30px 130px 10%;
-      background-color: #fcf7ee;
+      padding: 50px 30px 50px 10%;
+      background-color: #cbd9e2;
       width: 45%;
       position: relative;
       display: flex;
       align-items: center;
+      height: inherit;
       .banner-content {
         position: relative;
         max-width: 560px;
@@ -324,6 +325,7 @@ All colors MUST be HSL.
       width: 55%;
       padding-left: 0;
       position: relative;
+      height: inherit;
       .banner-right-img {
         position: relative;
         height: 100%;

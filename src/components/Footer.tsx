@@ -56,7 +56,7 @@ const Footer = () => {
                 <span className="font-medium">Email:</span> oceanicpharma843@gmail.com
               </li>
               <li>
-                <span className="font-medium">Phone:</span> +1 (555) 123-4567
+                <span className="font-medium">Phone:</span> +92 313 2312070
               </li>
               <li>
                 <span className="font-medium">Address:</span> 123 Medical Plaza, Health City, HC 12345
