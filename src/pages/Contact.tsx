@@ -115,7 +115,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@pharmacare.com</p>
+                      <p className="text-muted-foreground">oceanicpharma843@gmail.com</p>
                       <p className="text-sm text-muted-foreground mt-1">We'll respond within 24 hours</p>
                     </div>
                   </CardContent>
