@@ -179,8 +179,8 @@ const ProductDetailPage  = () => {
                   )
                 }
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="text-3xl font-bold text-primary">${productFromState?.price}</span>
-                  <span className="text-muted-foreground line-through">$39.99</span>
+                  <span className="text-3xl font-bold text-primary">Pkr. {productFromState?.price}</span>
+                  <span className="text-muted-foreground line-through">Pkr. {productFromState.cutPrice}</span>
                 </div>
               </div>
 
