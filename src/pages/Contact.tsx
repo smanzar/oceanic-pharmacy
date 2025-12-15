@@ -129,9 +129,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold text-lg mb-1">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Medical Plaza<br />
-                        Health City, HC 12345<br />
-                        United States
+                        4-F, 15/6 Dr Muhammad Ali Shah Rd,<br/> 
+                        Nazimabad No. 4 Block 4 Nazimabad, <br/>
+                        Karachi, 74700
                       </p>
                     </div>
                   </CardContent>

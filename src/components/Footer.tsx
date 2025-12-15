@@ -59,7 +59,7 @@ const Footer = () => {
                 <span className="font-medium">Phone:</span> +92 313 2312070
               </li>
               <li>
-                <span className="font-medium">Address:</span> 123 Medical Plaza, Health City, HC 12345
+                <span className="font-medium">Address:</span> 4-F, 15/6 Dr Muhammad Ali Shah Rd, Nazimabad No. 4 Block 4 Nazimabad, Karachi, 74700
               </li>
             </ul>
           </div>
