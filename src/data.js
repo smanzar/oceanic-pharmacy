@@ -6,7 +6,8 @@ const data = {
       name: 'Mulmax', 
       category: ['Multivitamin', 'Mineral'],
       description: 'Mutivitamin s anutritonal supplerment ontaining blend of mutiple vitamins, oftn ncluding cietary minerals and trace elements. Irs designed to help indtviduals maintain optinal utrentlevels in thlir bodies and may be used to address vitamin deficiencies or support overallheath.',
-      price: 29.99,
+      price: 850,
+      cutPrice: 1050,
       indication: 'Generalweakness,Pre &e postsurgery.Tirecdness, Pregnancy & lactation Patient Recovery period inadequate diet',
       images: ['mulmax-1.jpg', 'mulmax-2.jpg', 'mulmax-3.jpg'],
       dosage: 'One tablet daly or as drected by heheatcare advise,'
@@ -17,7 +18,8 @@ const data = {
       name: 'D-Light', 
       category: ['Vitamin-D'],
       description: 'CALCIUM & MTAMIN D3 prevents and teats ow calcium and iamin D3 levelsin your body. Vitamin D3 and calcium help build and maintain the health of your bones. Vitamin D3 also plays an importantrole in supporting your immune system and brain health.',
-      price: 29.99,
+      price: 450,
+      cutPrice: 600,
       indication: 'Osteoporosis, Osteopenia, Rickets, Bones and Joints, Rheumatoid Arthritis, Pregnancy & Lactation',
       images: ['dlight-1.jpg', 'dlight-2.jpg', 'dlight-3.jpg'],
       dosage: 'One or Two tablet daily or as directed by the healthcare adviser'
@@ -28,7 +30,8 @@ const data = {
       name: 'Maxilight', 
       category: ['Calcium', 'Vitamin', 'Zinc'],
       description: 'Cholecalciferol (vitamin D3) is in a class of medications called vitamin D analogs. Cholecalciferol is needed by the body for healthy bones, muscles, nerves, and to support the immune system.',
-      price: 29.99,
+      price: 750,
+      cutPrice: 1000,
       indication: 'Osteoporosis Hypoparathyroidism (Rickets) Osteomalacia Hypophosphatemia',
       images: ['maxlight-1.jpg', 'maxlight-2.jpg', 'maxlight-3.jpg'],
       dosage: 'As per directed by the healthcare adviser'
@@ -57,7 +60,8 @@ const data = {
 
         Overall, Max move fish collagen is a valuable supplement for skin, hair, and bone health, and may have additional benefits for overall well-being.
       `,
-      price: 29.99,
+      price: 1900,
+      cutPrice: 2000,
       indication: '-',
       images: ['maxmove-1.jpg', 'maxmove-2.jpg', 'maxmove-3.jpg'],
       dosage: 'As per directed by the healthcare adviser'

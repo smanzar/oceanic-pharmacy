@@ -117,8 +117,8 @@ const Home = () => {
     },
     {
       icon: Leaf,
-      title: "Safe & Natural",
-      description: "Made from natural ingredients with no harmful additives.",
+      title: "High-Purity Ingredients",
+      description: "Formulated with high-purity ingredients meeting strict quality and safety standards",
       image: naturalImage,
     },
     {
@@ -155,7 +155,7 @@ const Home = () => {
       <section ref={heroRef} className="relative overflow-hidden banner-section">
         <div className="banner-wrapper md:min-h-screen">
           <div className="banner-left">
-            <img src='/banner-texture.svg' alt='banner-texture' className="banner-vector3" />
+            {/* <img src='/banner-texture.svg' alt='banner-texture' className="banner-vector3" /> */}
             <div className="banner-content">
               <h1 className="font-literata">Oceanic Pharma A Trusted Name in Health & Wellness</h1>
               <p>Oceanic Pharma – Delivering Quality, Safety, and Wellness You Can Rely On. No matter what your day looks like, stay stronger and healthier with our trusted wellness range.</p>
@@ -163,7 +163,7 @@ const Home = () => {
           </div>
           <div className="banner-right-wrapper">
             <div className="banner-right-img">
-              <img src="/banner-prod.png" alt="Pharmaceutical Products" className="banner-right-bg" />
+              <img src="/banner-prod2.jpg" alt="Pharmaceutical Products" className="banner-right-bg" />
             </div>
           </div>
         </div>

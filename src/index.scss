@@ -330,6 +330,7 @@ All colors MUST be HSL.
         .banner-right-bg {
           min-height: 500px;
           height: 100%;
+          max-height: 100dvh;
           position: relative;
           object-fit: cover;
           width: 100%;
