@@ -28,7 +28,9 @@ const ProductCard = ({product, isPdp=false}) => {
             </div>
           )
         }
-        <p className="price">{product.price}.0 <del>PKR. {product.cutPrice}</del></p>
+        <p className="price">PKR. {product.price}.0 
+          {/* <del>PKR. {product.cutPrice}</del> */}
+        </p>
       </div>
       <span className="for-border"></span>
     </div>

@@ -13,6 +13,8 @@ const Header = () => {
     { name: "About Us", path: "/about" },
     { name: "Health Tips", path: "/health-tips" },
     { name: "Contact Us", path: "/contact" },
+    { name: "We serve", path: "/we-serve" },
+    { name: "Blogs", path: "/blogs" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -36,9 +38,8 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-base font-semibold transition-colors hover:text-primary ${
-                  isActive(item.path) ? "text-primary" : "text-muted-foreground"
-                }`}
+                className={`text-base font-semibold transition-colors hover:text-primary ${isActive(item.path) ? "text-primary" : "text-muted-foreground"
+                  }`}
               >
                 {item.name}
               </Link>
@@ -47,7 +48,7 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            
+
             {/* <Link to="/contact">
               <Button variant="default" size="default">
                 Contact Us
@@ -72,9 +73,8 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block py-2 text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(item.path) ? "text-primary" : "text-muted-foreground"
-                }`}
+                className={`block py-2 text-sm font-medium transition-colors hover:text-primary ${isActive(item.path) ? "text-primary" : "text-muted-foreground"
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}

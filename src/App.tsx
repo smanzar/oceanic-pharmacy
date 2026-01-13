@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import HealthTips from "./pages/HealthTips";
 import Contact from "./pages/Contact";
+import WeServe from "./pages/WeServe";
+import Blogs from "./pages/Blogs";
 import NotFound from "./pages/NotFound";
 import Products from "./pages/Products";
 import ProductDetailPage from "./pages/ProductDetailPage";
@@ -22,7 +24,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-       <ScrollToTop />
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-1">
@@ -33,6 +35,8 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/health-tips" element={<HealthTips />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/we-serve" element={<WeServe />} />
+              <Route path="/blogs" element={<Blogs />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

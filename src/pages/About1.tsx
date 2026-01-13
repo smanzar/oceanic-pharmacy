@@ -1,89 +1,42 @@
 import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Leaf, Microscope, Star, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-pharma.jpg";
-import qualityImage from "@/assets/quality-tested.jpg";
-import naturalImage from "@/assets/safe-natural.jpg";
-import scientificImage from "@/assets/scientifically-formulated.jpg";
-import data from "@/data";
-import ProductCard from "@/components/ProductCard";
-import Faq from "@/components/faq";
+import { Award, Users, Globe, Heart, ArrowRight } from "lucide-react";
+import aboutHero from "@/assets/about-hero.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Home = () => {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const productsRef = useRef<HTMLDivElement>(null);
-  const whyChooseRef = useRef<HTMLDivElement>(null);
-  const ctaRef = useRef<HTMLDivElement>(null);
+const About1 = () => {
+  const bannerRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const valuesRef = useRef<HTMLDivElement>(null);
   const statsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Hero animations
-    if (heroRef.current) {
-      gsap.from(heroRef.current.querySelector(".banner-content"), {
+    if (bannerRef.current) {
+      gsap.from(bannerRef.current, {
         opacity: 0,
-        y: 100,
+        y: 50,
         duration: 1,
-        ease: "power3.out",
-      });
-      gsap.from(heroRef.current.querySelector(".banner-right-bg"), {
-        opacity: 0,
-        // x: 100,
-        duration: 5,
         ease: "power3.out",
       });
     }
 
-    // Products animation
-    if (productsRef.current) {
-      gsap.from(productsRef.current.querySelectorAll(".product-card"), {
+    if (contentRef.current) {
+      gsap.from(contentRef.current.querySelectorAll(".content-section"), {
         scrollTrigger: {
-          trigger: productsRef.current,
+          trigger: contentRef.current,
           start: "top 80%",
         },
         opacity: 0,
         y: 50,
-        stagger: 0.2,
+        stagger: 0.3,
         duration: 0.8,
         ease: "power3.out",
       });
     }
 
-    // Why Choose Us animation
-    // if (whyChooseRef.current) {
-    //   gsap.from(whyChooseRef.current.querySelectorAll(".feature-card"), {
-    //     scrollTrigger: {
-    //       trigger: whyChooseRef.current,
-    //       start: "top 80%",
-    //     },
-    //     opacity: 0,
-    //     y: 50,
-    //     stagger: 0.2,
-    //     duration: 0.8,
-    //     ease: "power3.out",
-    //   });
-    // }
-
-    // CTA animation
-    if (ctaRef.current) {
-      gsap.from(ctaRef.current, {
-        scrollTrigger: {
-          trigger: ctaRef.current,
-          start: "top 80%",
-        },
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        ease: "power3.out",
-      });
-    }
-
-    // Counter animation for stats
     if (statsRef.current) {
       const counters = statsRef.current.querySelectorAll('.counter-value');
       counters.forEach((counter) => {
@@ -106,221 +59,133 @@ const Home = () => {
         });
       });
     }
+
+    if (valuesRef.current) {
+      gsap.from(valuesRef.current.querySelectorAll(".value-card"), {
+        scrollTrigger: {
+          trigger: valuesRef.current,
+          start: "top 80%",
+        },
+        opacity: 0,
+        scale: 0.8,
+        stagger: 0.2,
+        duration: 0.6,
+        ease: "back.out(1.7)",
+      });
+    }
   }, []);
 
-  const features = [
+  const values = [
     {
-      icon: Shield,
-      title: "Quality Tested",
-      description: "Every product undergoes rigorous quality control and testing.",
-      image: qualityImage,
+      icon: Award,
+      title: "Excellence",
+      description: "We maintain the highest standards in pharmaceutical quality and innovation.",
     },
     {
-      icon: Leaf,
-      title: "High-Purity Ingredients",
-      description: "Formulated with high-purity ingredients meeting strict quality and safety standards",
-      image: naturalImage,
+      icon: Users,
+      title: "Customer First",
+      description: "Your health and satisfaction are at the heart of everything we do.",
     },
     {
-      icon: Microscope,
-      title: "Scientifically Formulated",
-      description: "Developed by experts using the latest research and technology.",
-      image: scientificImage,
+      icon: Globe,
+      title: "Global Reach",
+      description: "Serving millions of customers worldwide with trusted healthcare solutions.",
+    },
+    {
+      icon: Heart,
+      title: "Care & Compassion",
+      description: "We believe in treating every customer with empathy and understanding.",
     },
   ];
 
-  const healthTips = [
-    {
-      title: "Health & Wellness: Empowering You to Live Your Best Life",
-      excerpt: "In today’s fast-paced world, health and wellness have become fundamental to leading...",
-      date: "Jan 15, 2025",
-      image: '/images/blog2.jpg',
-    },
-    {
-      title: "Understanding Calcium: The Cornerstone of Strong Bones and Overall Health",
-      excerpt: "Calcium is one of the most important minerals your body needs to function optimally..",
-      date: "Jan 10, 2024",
-      image: '/images/blog1.jpg',
-    },
-    {
-      title: "Four Great Supplements You Can Start Taking Today | Oceanic Pharma",
-      excerpt: "In today’s demanding lifestyle, maintaining optimal health through diet alone is often difficult....",
-      date: "Jan 5, 2025",
-      image: '/images/blog5.jpg',
-    },
-  ];
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section ref={heroRef} className="relative overflow-hidden banner-section">
-        <div className="banner-wrapper md:min-h-screen">
-          <div className="banner-left">
-            {/* <img src='/banner-texture.svg' alt='banner-texture' className="banner-vector3" /> */}
-            <div className="banner-content">
-              <h1 className="font-literata">Oceanic pharma a trusted name in health & wellness</h1>
-              <p>Oceanic pharma – delivering quality, safety, and wellness you can rely on. No matter what your day looks like, stay stronger and healthier with our trusted wellness range.</p>
-            </div>
-          </div>
-          <div className="banner-right-wrapper">
-            <div className="banner-right-img">
-              <img src="/banner-prod2.jpg" alt="Pharmaceutical Products" className="banner-right-bg" />
-            </div>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 hidden">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="hero-content space-y-8">
-              <div className="space-y-4">
-                <span className="text-6xl md:text-8xl font-bold text-muted-foreground/20">01</span>
-                <h1 className="text-4xl md:text-6xl font-bold text-foreground uppercase tracking-tight">
-                  Balancing<br />Serum
-                </h1>
-              </div>
-              <p className="text-lg text-muted-foreground max-w-md">
-                Balancing your skin with premium pharmaceutical serum, infused with natural extracts for optimal health and radiance.
-              </p>
-            </div>
-            <div className="hero-image relative">
-              <div className="relative">
-                <img
-                  src={heroImage}
-                  alt="Premium Pharmaceutical Product"
-                  className="w-full h-auto object-contain drop-shadow-2xl"
-                />
-                <div className="absolute -bottom-8 -right-8 bg-background rounded-full w-40 h-40 md:w-56 md:h-56 flex flex-col items-center justify-center shadow-xl border border-border">
-                  <span className="text-muted-foreground text-sm mb-2">Next Item</span>
-                  <ArrowRight className="w-8 h-8 text-primary mb-4" />
-                  <span className="text-5xl md:text-7xl font-bold text-foreground">02</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Banner */}
+      
+      <section
+        ref={bannerRef}
+        className="relative h-[60vh] flex items-center justify-center bg-gradient-to-r from-primary/20 to-accent/20"
+      >
+        <img
+          src={aboutHero}
+          alt="About Us"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        />
+        <div className="relative z-10 text-center">
+          <h1 className="text-4xl md:text-6xl font-literata text-[#1c1a1d] mb-4">About PharmaCare</h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
+            Committed to your health and wellness for over 25 years
+          </p>
         </div>
       </section>
 
-      <section className="pt-20">
+      {/* Company Story */}
+      <section ref={contentRef} className="py-20">
         <div className="container mx-auto px-4">
-          <div className="flex md:flex-nowrap flex-wrap gap-8 items-center text-center">
-            <div className="w-full">
-              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-7 text-foreground">
-                About us
-              </h2>
-              <p className="leading-7 text-muted-foreground mb-6 text-lg">
-                At Oceanic Pharma, we believe that true wellness begins with strong foundations — from healthy bones to a nourished body. As a trusted name in health and nutritional care, we specialize in developing and distributing premium-quality multivitamins and bone support supplements designed to enhance everyday well-being.
-              </p>
-              {/* <Link to="/about">
-                <Button variant="secondary" className="px-6 py-2 h-[44px]">
-                  Learn More
-                </Button>
-              </Link> */}
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="flex md:flex-nowrap flex-wrap gap-8 items-center">
-            <div className="md:w-1/2 w-full">
-              <img src='./aboutUs.jpg' alt='about' className="w-full rounded-[25px]" />
-            </div>
-            <div className="md:w-1/2 w-full">
-              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-7 text-foreground">
-                Our Mission — Advancing Wellness with Purpose
-              </h2>
-              <p className="leading-7 text-muted-foreground mb-6">
+          <div className="max-w-4xl mx-auto space-y-12">
+            <div className="content-section">
+              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-6">Our Mission — Advancing Wellness with Purpose</h2>
+              <p className="text-lg text-muted-foreground mb-4">
                 At Oceanic Pharma, our mission is to elevate the standards of health and wellbeing through integrity, innovation, and a deep commitment to the communities we serve. Guided by a vision of contributing to a healthier tomorrow, we strive to deliver trusted nutritional and healthcare solutions that make a meaningful difference in people’s lives.
               </p>
-              <Link to="/about">
-                <Button variant="secondary" className="px-6 py-2 h-[44px]">
-                  Learn More
-                </Button>
-              </Link>
+              <p className="text-lg text-muted-foreground mb-4">
+                As a forward-thinking pharmaceutical and nutraceutical company, we combine the power of nature with the precision of modern science. Our focus is to research, develop, and provide products that support stronger bodies, balanced nutrition, and long-term wellness. Every formula we design undergoes rigorous quality standards, ensuring safety, purity, and reliability values that define who we are.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                At Oceanic Pharma, we believe wellness is not just an outcome; it is a continuous journey. That is why we are dedicated to promoting a healthier lifestyle, fostering customer trust, and contributing to the wellbeing of our community. Through ethical practices, sustainable innovation, and unwavering commitment to excellence, we aim to be a brand that people can rely on for their health, today and for years to come.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                With every step we take, and every product we create, we reaffirm our promise: To advance wellness with purpose and to enrich lives, the Oceanic way.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section className="md:pt-20 md:pb-20">
-        <div className="container mx-auto px-4">
-          <div className="flex md:flex-nowrap flex-wrap gap-8 items-center">
-            <div className="md:w-1/2 w-full">
-              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-7 text-foreground">
-                Our Vision
-              </h2>
-              <p className="leading-7 text-muted-foreground mb-6">
+            <div className="content-section">
+              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-6">Our Mission</h2>
+              <p className="text-lg text-muted-foreground mb-4">
+                At PharmaCare, our mission is to improve lives through accessible, high-quality
+                pharmaceutical products and exceptional customer service. We believe that everyone
+                deserves access to safe, effective healthcare solutions.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                We achieve this through continuous innovation, rigorous quality control, and a
+                deep commitment to scientific research and development. Every product we offer is
+                backed by extensive testing and meets the highest industry standards.
+              </p>
+            </div>
+
+            <div className="content-section">
+              <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-6">Our Vision</h2>
+              <p className="text-lg text-muted-foreground mb-4">
                 At Oceanic Pharma, our vision is to become a trusted global leader in innovative, science-backed nutritional and healthcare solutions. We aspire to set new standards of excellence by delivering products that empower individuals to live healthier, stronger, and more fulfilling lives.
               </p>
-              <Link to="/about">
-                <Button variant="secondary" className="px-6 py-2 h-[44px]">
-                  Learn More
-                </Button>
-              </Link>
-            </div>
-            <div className="md:w-1/2 w-full">
-              <img src='./our-vision.jpg' alt='about' className="w-full rounded-[25px]" />
+              <p className="text-lg text-muted-foreground">
+                We envision a future where wellness is accessible to everyone supported by our commitment to quality, ethical practices, and continuous advancement. Through responsible innovation and a customer-first approach, Oceanic Pharma aims to shape a healthier world, one step at a time.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Our Products */}
-      {/* ref={productsRef} */}
-      <section className="py-20 bg-background">
+      {/* Company Values */}
+      {/* ref={valuesRef} */}
+      <section className="py-20 textured-bg">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] text-center mb-12 text-foreground">
-            Our Products
-          </h2>
-          <div className="grid place-content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* {data.products} */}
-            {data.products.map((product) => (
-              <ProductCard product={product} key={product.id} />
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link to="/products">
-              <Button size="lg" variant="outline">
-                View All Products <ArrowRight className="ml-2" size={20} />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section ref={whyChooseRef} className="textured-bg">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] text-center mb-12">
-            Why Choose Us
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="feature-card relative rounded-3xl pb-12">
+          <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] text-center mb-12">Our Core Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => (
+              <Card key={index} className="value-card hover:shadow-xl transition-all">
                 <CardContent className="p-6 text-center">
-                  <div className="relative z-1 mb-4">
-                    <div className="image">
-                      <img
-                        src={feature.image}
-                        alt={feature.title}
-                        className="w-full h-48 object-cover"
-                      />
-                    </div>
-                    <div className="icon">
-                      <feature.icon className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="font-bold text-xl mb-3">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <value.icon className="w-16 h-16 text-primary mx-auto mb-4" />
+                  <h3 className="font-bold text-xl mb-3">{value.title}</h3>
+                  <p className="text-muted-foreground">{value.description}</p>
                 </CardContent>
-                <div className="absolute bottom-0 left-0">
-                  <img src="/choose-texture.png" alt="choose-texture" />
-                </div>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Customer Trust */}
+      {/* Statistics */}
       <section ref={statsRef} className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] mb-8 text-foreground">Customer Trust</h2>
@@ -334,7 +199,7 @@ const Home = () => {
               <div>
                 <h3 className="font-literata text-[#1c1a1d]">Satisfied Clients</h3>
                 <p className="text-primary mb-2 text-4xl">
-                  <span className="counter-value" data-target="1" data-suffix="M+">0M+</span>
+                  <span className="counter-value" data-target="10" data-suffix="M+">0M+</span>
                 </p>
               </div>
             </div>
@@ -346,7 +211,7 @@ const Home = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="font-literata text-[#1c1a1d]">GMP Certified Manufacturing</h3>
+                <h3 className="font-literata text-[#1c1a1d]">Natural Products</h3>
                 <p className="text-primary mb-2 text-4xl">
                   <span className="counter-value" data-target="100" data-suffix="%">0%</span>
                 </p>
@@ -360,9 +225,9 @@ const Home = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="font-literata text-[#1c1a1d]">Experience in Healthcare</h3>
+                <h3 className="font-literata text-[#1c1a1d]">Experience</h3>
                 <p className="text-primary mb-2 text-4xl">
-                  <span className="counter-value" data-target="10" data-suffix="+ Years">0+ Years</span>
+                  <span className="counter-value" data-target="20" data-suffix="+ Years">0+ Years</span>
                 </p>
               </div>
             </div>
@@ -374,7 +239,7 @@ const Home = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="font-literata text-[#1c1a1d]">Qualified Pharma Specialists</h3>
+                <h3 className="font-literata text-[#1c1a1d]">Specialists in The Team</h3>
                 <p className="text-primary mb-2 text-4xl">
                   <span className="counter-value" data-target="10" data-suffix="+">0+</span>
                 </p>
@@ -384,58 +249,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Health Tips */}
-      <section className="py-20">
+      {/* Team Section */}
+      <section className="py-20 textured-bg">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl text-center mb-12 text-[#1c1a1d] font-literata">
-            Featured Health Tips
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {healthTips.map((tip, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow bg-[#f5f2ec]">
-                <CardContent className="p-0">
-                  <div className="w-full h-[340px] bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg mb-4">
-                  <img src={tip.image} alt={tip.title} className="w-full h-full object-cover rounded-lg" />
-                  </div>
-                  <div className="p-6">
-                    <p className="text-sm text-muted-foreground mb-2">{tip.date}</p>
-                    <h3 className="font-bold text-xl mb-3">{tip.title}</h3>
-                    <p className="text-muted-foreground mb-4">{tip.excerpt}</p>
-                    <Link to="/health-tips" className="text-primary font-medium hover:underline">
-                      Read More →
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      {/* ref={ctaRef} */}
-      <section className="text-white textured-bg">
-        <div className="container mx-auto px-4 text-center">
-          <Star className="w-16 h-16 mx-auto mb-6 animate-pulse text-black" />
-          <h2 className="text-3xl font-literata text-[#1c1a1d] md:text-5xl mb-6">
-            "Your health is your wealth. Invest in it wisely."
-          </h2>
-          <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto text-[#1c1a1d]">
-            Join millions of satisfied customers who trust PharmaCare for their health and wellness needs.
+          <h2 className="text-3xl md:text-4xl font-literata text-[#1c1a1d] text-center mb-12">Our Dedicated Commitment</h2>
+          <p className="text-md leading-8 text-muted-foreground text-justify">
+            At Oceanic Pharma, our purpose goes beyond medicines. We exist to serve life itself by advancing healthcare through science, integrity, and an unwavering sense of responsibility. Every decision we make is guided by one simple belief: patients come first.
+            Our journey is shaped by the dedication of medical experts, scientists, and professionals who share a deep commitment to excellence. Together, we work relentlessly to develop pharmaceutical solutions that healthcare providers can trust and patients can depend on. Quality, safety, and ethics are not goals for us; they are non-negotiable standards.
+            As a leader in healthcare, we recognize the trust placed in us by physicians, partners, and communities. We honor that trust by continuously investing in innovation, adhering to global quality benchmarks, and acting with transparency at every level of our organization.
+            Looking ahead, our vision is clear-to contribute meaningfully to healthier lives, stronger healthcare systems, and a future where science and compassion work hand in hand.
           </p>
-          <Link to="/products">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Shop Now
-            </Button>
-          </Link>
         </div>
-      </section>
-
-      <section className="py-10">
-        <Faq />
       </section>
     </div>
   );
 };
 
-export default Home;
+export default About1;
