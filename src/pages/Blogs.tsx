@@ -3,7 +3,7 @@ import blogsData from "@/data/blogsData";
 
 const Blogs = () => {
   return (
-    <div className="min-h-screen bg-[#f3f3f3] text-[#333] font-sans pb-20">
+    <div className="min-h-screen bg-[#f3f3f3] text-[#333] font-sans py-20">
 
       {/* 1. Hero / Header Section */}
       <div className="bg-white py-16 text-center border-b border-gray-200">
@@ -43,7 +43,7 @@ const Blogs = () => {
                 </div>
 
                 <h2 className="text-sm md:text-base font-bold uppercase leading-tight text-gray-800 group-hover:text-primary transition-colors cursor-pointer">
-                  <Link to={blog.link} className="hover:underline decoration-transparent">
+                  <Link to={`/blogs/${blog.title.toLowerCase().replace(/\s+/g, '-')}`} className="hover:underline decoration-transparent">
                     {blog.title}
                   </Link>
                 </h2>
@@ -54,7 +54,7 @@ const Blogs = () => {
         </div>
 
         {/* Pagination (Visual Only) */}
-        <div className="flex justify-center mt-12 gap-2">
+        <div className="flex justify-center mt-12 gap-2 hidden">
           <button className="w-10 h-10 bg-gray-800 text-white font-bold flex items-center justify-center text-sm">1</button>
           <button className="w-10 h-10 bg-white border border-gray-300 text-gray-600 hover:bg-gray-100 flex items-center justify-center text-sm">2</button>
           <button className="w-10 h-10 bg-white border border-gray-300 text-gray-600 hover:bg-gray-100 flex items-center justify-center text-sm">&gt;</button>

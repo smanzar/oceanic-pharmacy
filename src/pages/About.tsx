@@ -12,7 +12,7 @@ const About = () => {
   const social = aboutData.sections.find(s => s.type === 'social');
 
   return (
-    <div className="min-h-screen bg-white text-[#333] font-sans">
+    <div className="min-h-screen bg-white text-[#333] font-sans pt-20">
 
       {/* 1. HERO BANNER */}
       <section className="relative h-[200px] md:h-[250px] bg-cover bg-center flex items-center justify-center text-white"
@@ -124,7 +124,7 @@ const About = () => {
           </div>
           {/* Image */}
           <div className="h-[300px] bg-gray-100 border border-gray-200 flex items-center justify-center">
-            <span className="text-gray-400">Manufacturing Image</span>
+            <span className="text-gray-400">Commitment Image</span>
           </div>
         </div>
       </section>
@@ -135,9 +135,9 @@ const About = () => {
           <h3 className="text-2xl font-bold text-primary uppercase mb-2">
             {mantra?.title}
           </h3>
-          <p className="text-lg italic text-gray-600 mb-6 font-serif">
+          {/* <p className="text-lg italic text-gray-600 mb-6 font-serif">
             {mantra?.quote}
-          </p>
+          </p> */}
           <p className="text-gray-600 leading-7 text-[15px]">
             {mantra?.content}
           </p>

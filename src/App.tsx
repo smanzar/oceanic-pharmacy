@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import Products from "./pages/Products";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ScrollToTop from "./components/ScrollToTop";
+import BlogDetailPage from "./pages/BlogDetailPage";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/we-serve" element={<WeServe />} />
               <Route path="/blogs" element={<Blogs />} />
+              <Route path="/blogs/:blogId" element={<BlogDetailPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

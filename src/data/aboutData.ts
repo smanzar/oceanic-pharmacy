@@ -8,30 +8,31 @@ const aboutData = {
     heading: 'At Oceanic Pharma',
     quote: '“We make a living by what we get, we make a life by what we give.”',
     content: [
-      `Oceanic Pharma is one of the strong-growing pharmaceutical company in India, fostering the people in various parts of the country since the last decade. This decade-long voyage has helped us grow from 26 products to more than 1350+ products, 4 Specialised Segments, covering almost all therapeutic groups and specialties. This comprehensive range is the company’s key strength.`,
-      `Oceanic Pharmaceutical is a trustable salubrious partner which is striving to improve access and affordability of medicines, create healthier communities, and put a healthy mind, body, and environment within the reach of everyone, everywhere. We’ve been privileged to play a role in helping millions of people stay well.`
+      `At Oceanic Pharma, we believe in the principle that true success lies in meaningful contribution, not just commercial growth. Our purpose is not simply to manufacture medicines, but to make a positive difference in the lives of patients, healthcare professionals, and communities we serve.`,
+      `Oceanic Pharma is a rapidly growing pharmaceutical company based in Pakistan, dedicated to improving access to quality healthcare solutions. Since our inception, we have expanded our portfolio to cover a wide range of therapeutic categories, supporting diverse patient needs across hospitals, clinics, pharmacies, and healthcare institutions throughout Pakistan and South Asia.`,
+      `We are proud to be recognized as a trusted healthcare partner committed to quality, safety, and ethical business practices.`
     ],
   },
   philosophy: {
-    title: "Company's Philosophy – Core Values",
-    quote: "“Our work is not just about making medicines. It is about making a difference”"
+    title: "Our Philosophy – Core Values",
+    quote: "“Our work is not just about making medicines. It is about making a difference.”"
   },
   values: [
     {
-      title: 'Innovation',
-      desc: 'Innovation is a critical component in improving individual and organizational performance. It is more radical and transformational than improvement. We pursue pharmaceutical innovation, provide high-quality products, and strive to deliver superior business results. We continually search for new ways to improve everything we do. Thus we continuously reinvent the way we do business to win in the marketplace.'
+      title: 'Innovation Driven',
+      desc: 'Innovation is at the core of everything we do. We continually explore new ways to improve our products, processes, and services to deliver better outcomes for patients and partners.'
     },
     {
-      title: 'Excellence',
-      desc: 'We want to set the gold standard in performance by going above and beyond what is expected. Having a desire to excel, makes us refuse mediocrity and not settle for anything average. Excellence requires us to benchmark our performance rigorously versus the very best internally and externally. We never rest on our laurels, and our passion for excellence drives us to continually improve practices so that processes and procedures are continuously updated.'
+      title: 'Excellence Focused',
+      desc: 'We strive to set high performance standards in all areas of our business. Excellence for us means continuously raising the bar and refusing to settle for mediocrity.'
     },
     {
-      title: 'Purpose',
-      desc: 'Our Purpose lies at the center of all our thoughts and plans and drives our actions. In being purpose inspired, we look at actions and solutions that are sustainable and lead to ‘Adding Life to Life’. A special purpose: to help people do more, feel better, live longer. Oceanic has been built brick by brick, on the foundation of making the real change and help in giving people a better quality of life. We infuse energy in everything that you do and attach weight to walking that extra mile and inspiring others. We make every effort to do your best in every situation'
+      title: 'Purpose Inspired',
+      desc: 'Our purpose drives our action: to help people live healthier, more fulfilled lives. We are committed to delivering products and solutions that truly improve quality of life.'
     },
     {
-      title: 'Integrity',
-      desc: 'Trust and integrity are the sums of all the decisions each of us makes every day. We believe and encourage in adhering to strong ethical and moral standards. We must do the right thing in the right way even when no one is watching. Our interactions with each other and the outside world are built on trust. Integrity and trust form the bedrock for building high-performance organizations. At Oceanic, we are fully committed to adhering to principles of transparency while conducting business and upholding every transaction with the highest level of integrity so as to garner trust from our stakeholders.'
+      title: 'Integrity & Trust Anchored',
+      desc: 'Every decision at Oceanic Pharma is guided by integrity and trust. We uphold ethical conduct in all interactions with customers, employees, partners, and communities.'
     },
   ],
   visionMission: {
@@ -42,24 +43,39 @@ const aboutData = {
   sections: [
     {
       type: 'manufacturing',
-      title: 'Manufacturing Facility',
-      content: 'Our manufacturing unit is a GMP certified unit and accredited by an ISO 9001:2008 certificate. The au courant manufacturing facility is equipped with hi-tech sophisticated machineries to achieve a high level of accuracy and precision. We are committed to high standards of manufacturing excellence.'
+      title: 'Commitment to Quality',
+      content: `
+      Quality at Oceanic Pharma is not just a requirement; it is a core principle that guides our entire operation. We follow strict quality control procedures at every stage—from sourcing raw materials to manufacturing and distribution.
+      Our products are developed and tested in compliance with Good Manufacturing Practices (GMP) and international quality standards to meet the expectations of healthcare professionals and patients alike.
+      “Quality is not an act. It is a habit.”
+      `
     },
     {
       type: 'mantra',
-      title: 'Our Mantra',
-      quote: '“Doing ordinary things extraordinarily well”',
-      content: 'Since inception, product quality has always been a priority for Oceanic. Our dedication to quality in everything we do is uncompromising and covers every stage of the development, production, and marketing of our medicines. Our manufacturing process complies with GMP standards and is accredited by ISO 9001:2008 certificate. All supplier procedures are strictly supervised to ensure that only the highest grade raw materials are used in our products. We have a dedicated pool of talent who consistently ensure that the highest quality and safety standards are built into our products.'
+      title: 'Culture & Values',
+      // quote: '“Doing ordinary things extraordinarily well”',
+      content: `
+        At Oceanic Pharma, our people are our strength. We foster a culture of collaboration, continuous learning, and performance excellence. Our team is encouraged to think innovatively, operate responsibly, and always act with integrity.
+        We uphold honesty, fairness, and mutual respect in every aspect of our business. By nurturing talent and investing in our team’s growth, we ensure that Oceanic Pharma consistently delivers excellence.
+      `
     },
     {
       type: 'culture',
-      title: 'Culture & Value',
-      content: 'We maintain an environment built on mutual respect, openness, and individual integrity. Respect for people includes our concern for all people who touch or are touched by our company: customers, employees, shareholders, partners, suppliers, and communities. A hallmark of Oceanic Pharmaceuticals- demanding of ourselves and each and every employee because our work impacts people’s lives. Our strength lies in our workforce. We encourage our employees to always strive for innovation and excel beyond the norm. At Oceanic, every working opportunity comes with passion, dedication and the zeal to excel. We are committed to practice honesty, impartiality & fairness at all times to all our employees. We always believe in team-work.'
+      title: 'Social Responsibility',
+      content: 'We believe that business success must be paired with social contribution. Oceanic Pharma is committed to initiatives that support patient health, community well-being, and environmental sustainability. Through responsible practices and community engagement, we strive to make a positive impact beyond healthcare alone.'
     },
     {
       type: 'social',
-      title: 'Social Responsibility',
-      content: 'We, at Oceanic Pharmaceuticals, work for causes that make a difference. Caring is central to the work we do and defines our responsibility to those we serve. In everything we do, we naturally adopt responsibility towards mankind and the environment. When you choose to trust us, you’re not only investing in your own wellness but in the wellness of the society. We feel blessed to have had this opportunity to pay back in a small way for what we have received in plenty.'
+      title: 'Our Promise',
+      content: `
+      Oceanic Pharma exists not just to supply medicines, but to enhance lives and build healthier communities.
+        When you partner with Oceanic Pharma, you choose:
+        Uncompromised quality and safety
+        Innovative and effective pharmaceutical solutions
+        Ethical and transparent business practices
+        Commitment to people and community health
+      Oceanic Pharma exists not just to supply medicines, but to enhance lives and build healthier communities.
+      `
     }
   ]
 };
