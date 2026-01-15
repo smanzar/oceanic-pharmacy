@@ -11,6 +11,7 @@ import HealthTips from "./pages/HealthTips";
 import Contact from "./pages/Contact";
 import WeServe from "./pages/WeServe";
 import Blogs from "./pages/Blogs";
+import DrugSafety from "./pages/DrugSafety";
 import NotFound from "./pages/NotFound";
 import Products from "./pages/Products";
 import ProductDetailPage from "./pages/ProductDetailPage";
@@ -39,6 +40,7 @@ const App = () => (
               <Route path="/we-serve" element={<WeServe />} />
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/blogs/:blogId" element={<BlogDetailPage />} />
+              <Route path="/drug-safety" element={<DrugSafety />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
